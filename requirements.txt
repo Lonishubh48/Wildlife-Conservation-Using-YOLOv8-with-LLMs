@@ -1,0 +1,6 @@
+streamlit==1.26.0
+opencv-python==4.8.0.76
+ultralytics==8.0.45
+numpy==1.24.4
+gtts==2.3.2
+google-generativeai==0.1.0
