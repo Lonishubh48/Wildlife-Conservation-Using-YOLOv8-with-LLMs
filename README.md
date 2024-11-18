@@ -6,6 +6,7 @@ Welcome to the **Animal Detection and Conservation Insights** repository! This p
 
 ## 📜 Table of Contents
 - [Overview](#-overview)
+- [Dataset Description](#-DatasetDescription)
 - [Features](#-features)
 - [Setup and Installation](#-setup-and-installation)
 - [Usage](#-usage)
@@ -26,6 +27,48 @@ Wildlife conservation is vital for maintaining biodiversity and ecological balan
 2. **Generate Conservation Insights** for detected species using Generative AI.
 3. Enable **speech output** for detected classes and conservation descriptions.
 4. Provide an interactive **Streamlit web app** for users.
+
+---
+
+## 📂 Dataset Description
+
+This project utilizes the **African Wildlife Dataset**, designed for training animal detection models, particularly for conservation efforts in nature reserves. The dataset comprises images and corresponding labels formatted for object detection tasks using YOLO.
+
+### Context
+The dataset was collected to enable **real-time animal detection** in South African nature reserves. It serves as a foundational resource for creating machine learning models aimed at supporting wildlife conservation efforts.
+
+### Data Collection Process
+1. **Image Gathering**:
+   - Images were manually sourced through Google search, ensuring high-quality representations of each class.
+2. **Manual Labeling**:
+   - Each image was annotated in the **YOLO format**, specifying bounding boxes and class labels.
+
+### Dataset Details
+- **Animal Classes**:
+  - **Buffalo (0)**
+  - **Elephant (1)**
+  - **Rhino (2)**
+  - **Zebra (3)**
+- **Data Size**:
+  - At least **376 images per class**, with varying aspect ratios.
+- **Annotations**:
+  - Each image is paired with a `.txt` file containing annotations in YOLO format, listing:
+    ```
+    <class> <x_center> <y_center> <width> <height>
+    ```
+    - **Class**: Animal class index.
+    - **Coordinates**: Normalized bounding box coordinates.
+- **Characteristics**:
+  - Images may contain multiple animals, including instances of different species in a single image.
+
+### Example Use Case
+The dataset's real-world application includes training embedded devices for real-time wildlife monitoring and conservation efforts.
+
+### Source
+The dataset is publicly available on Kaggle: [African Wildlife Dataset](https://www.kaggle.com/datasets/biancaferreira/african-wildlife)
+
+![AfricanWildlife](https://github.com/user-attachments/assets/ff6f8113-2482-4fc1-9cf9-98b5fb059259)
+
 
 ---
 
