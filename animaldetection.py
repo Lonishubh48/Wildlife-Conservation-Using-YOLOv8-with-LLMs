@@ -8,7 +8,7 @@ import google.generativeai as genai
 import base64
 
 # Configure the API key
-genai.configure(api_key="AIzaSyB0M1aB098Z8HCmyzkyB7hUo1M94Tl1IOc")
+genai.configure(api_key="Your google Api key")
 
 # Load the trained model
 model = YOLO("trainedweight.pt")
